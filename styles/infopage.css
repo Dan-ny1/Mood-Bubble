@@ -1,0 +1,27 @@
+p {
+	position: absolute;
+	padding: 2em 10em;
+	font-size: 1.3rem;
+}
+
+#circle {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 30rem;
+	width: 60rem;
+	border-radius: 0 0 45rem 45rem;
+	background-color: pink;
+}
+
+#arrow {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 40px solid darkgray;
+	position: fixed;
+	left: 50%;
+	top: 93%;
+}

@@ -1,0 +1,44 @@
+#circle {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 30rem;
+	width: 60rem;
+	border-radius: 0 0 45rem 45rem;
+	background-color: pink;
+}
+
+h1,
+div {
+	position: absolute;
+}
+
+h1 {
+	left: 40%;
+	font-size: 3rem;
+}
+h3 {
+	font-size: 1.5rem;
+	position: relative;
+}
+h3:first-of-type {
+	top: 50px;
+	left: 10%;
+}
+h3:nth-of-type(2) {
+	top: 150px;
+	left: 40%;
+}
+h3:nth-of-type(3) {
+	top: 250px;
+	left: 130%;
+}
+h3:nth-of-type(4) {
+	top: 50px;
+	left: 280%;
+}
+h3:last-of-type {
+	bottom: 150px;
+	left: 280%;
+}

@@ -27,3 +27,4 @@ function animateDiv(myclass) {
 		animateDiv(myclass);
 	});
 }
+
