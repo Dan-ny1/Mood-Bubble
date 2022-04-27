@@ -1,2 +1,50 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
+
+button{
+    border-radius: 50%;
+    border: none;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    font-size: 2em;
+    opacity: 0.9;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h1{
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  
+  button.a {
+   background-color: #c8ffbe;    
+  }
+  
+  button.b {
+   background-color: #cfd6ea;   
+  }
+  button.c {
+   background-color:#22223b;
+      
+  }
+  button.d {
+   background-color:yellow;
+  }
+
+  button.e {
+    background-color: #393a10;    
+   }
+   
+   button.f {
+    background-color:#d33f49;   
+   }
+   button.g {
+    background-color:#51355a;
+       
+   }
+   button.h {
+    background-color:#087e8b;
+   }
