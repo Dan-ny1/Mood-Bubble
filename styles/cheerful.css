@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+   }
+   
+   *,
+   *:before,
+   *:after {
+    box-sizing: inherit;
+   }
+
+
+p {
+ position: absolute;
+    left:10%;
+    padding: 0 100px 0px 0px;
+    font-size: 1.6rem;
+    width: 600px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#circle {
+ position: absolute;
+ top: 30%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ height: 40rem;
+ width: 80rem;
+ border-radius: 0 0 40rem 40rem;
+ background-color: #F7DB39;
+}
+
+#arrow {
+ width: 0;
+ height: 0;
+ border-left: 20px solid transparent;
+ border-right: 20px solid transparent;
+ border-top: 40px solid darkgray;
+ position: fixed;
+ left: 50%;
+ top: 93%;
+}
+
+span{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+}
+
+h1{
+    position: absolute;
+    font-size: 6rem;
+    color: white;
+    left: 50%;
+    top: 5%;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+figure{
+    position: absolute;
+    left: 5%;
+    top: 30%;
+}

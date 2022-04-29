@@ -1,0 +1,49 @@
+
+#circle {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 40rem;
+	width: 80rem;
+	border-radius: 0 0 40rem 40rem;
+	background-color: #d5d8ff;
+   }
+
+   h1, h2{
+    display: grid;
+    justify-content: center;
+       align-content: center;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+   }
+
+   h1{
+       padding-top:1em;
+       font-size: 4em;
+   }
+
+   h2{
+    padding-top: 1em;
+    font-size: 2.5em;
+    text-align: center;
+   }
+
+   h3{
+    display: grid;
+    justify-content: center;
+       align-content: center;
+    position: relative;
+    font-size: 1.3em;
+    padding-top: 30rem;
+    font-family: 'Open Sans', sans-serif;
+   }
+
+   a:hover{
+       color:#d5d8ff;
+   }
+
+   figcaption {
+      font-size: 0.875em;
+      padding-bottom: 0.5em;
+   }

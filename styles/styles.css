@@ -1,6 +1,10 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 
+div{
+    margin: 10rem;
+}
+
 button{
     border-radius: 50%;
     border: none;
@@ -14,13 +18,24 @@ button{
   }
 
   h1{
-    text-align: center;
-    padding: 2rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20rem;
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
   }
   
-  
+  a:link, a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover{
+    color: rgb(244, 164, 164);
+  }
+
   button.a {
-   background-color: #c8ffbe;    
+   background-color: #c8ffbe;
   }
   
   button.b {
@@ -35,7 +50,7 @@ button{
   }
 
   button.e {
-    background-color: #393a10;    
+    background-color: #739176;    
    }
    
    button.f {
