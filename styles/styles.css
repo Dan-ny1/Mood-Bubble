@@ -2,7 +2,7 @@
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 
 div{
-    margin: 10rem;
+    padding: 10rem;
 }
 
 button{
@@ -21,7 +21,7 @@ button{
     display: grid;
     justify-content: center;
     align-content: center;
-    padding-top: 20rem;
+    padding-top: 10rem;
     font-size: 3em;
     font-family: 'Open Sans', sans-serif;
   }
@@ -31,7 +31,7 @@ button{
     text-decoration: none;
   }
   a:hover{
-    color: rgb(244, 164, 164);
+    color: rgb(138, 0, 0);
   }
 
   button.a {
@@ -54,12 +54,12 @@ button{
    }
    
    button.f {
-    background-color:#d33f49;   
+    background-color:#ffbcc1;   
    }
    button.g {
     background-color:#51355a;
        
    }
    button.h {
-    background-color:#087e8b;
+    background-color:#dffcff;
    }

@@ -16,7 +16,7 @@ p {
     font-size: 1.6rem;
     width: 600px;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: rgb(255, 229, 180);
     top: 5%;
 }
 
@@ -51,9 +51,9 @@ span{
 h1{
     position: absolute;
     font-size: 6.5rem;
-    color: white;
+    color: rgb(255, 229, 180);
     left: 55%;
-    bottom: 55%;
+    bottom: 65%;
     font-family: 'Open Sans', sans-serif;
     
 }
