@@ -8,56 +8,107 @@ html {
     box-sizing: inherit;
    }
 
-p {
- position: absolute;
-    left:12%;
-    padding: 0 100px 0px 0px;
-    font-size: 1.6rem;
-    width: 600px;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-}
+   p {
+    position: absolute;
+       left:10%;
+       padding: 0 100px 0px 0px;
+       font-size: 2.5vw;
+       width: 45vw;
+       font-family: 'Montserrat', sans-serif;
+   }
+    
 
 #circle {
- position: absolute;
- top: 30%;
- left: 50%;
- transform: translate(-50%, -50%);
- height: 40rem;
- width: 80rem;
- border-radius: 0 0 40rem 40rem;
- background-color: #dffcff;
-}
-
-#arrow {
- width: 0;
- height: 0;
- border-left: 20px solid transparent;
- border-right: 20px solid transparent;
- border-top: 40px solid darkgray;
- position: fixed;
- left: 50%;
- top: 93%;
-}
-
-span{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
-}
+    transform: translate(-50%, -50%);
+    height: 90vh;
+    width: 100vw;
+    border-radius: 0 0 90vh 90vh;
+    background-color: #dffcff;
+   }
+   
+   #arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid darkgray;
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+   }
+
+   
+.video{
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .video iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 40%;
+    height: 40%;
+  }
 
 h1{
     position: absolute;
-    font-size: 7rem;
+    font-size: 8vw;
     color: black;
-    left: 50%;
-    bottom: 60%;
+    left: 52%;
+    bottom: 58%;
     font-family: 'Open Sans', sans-serif;
-    
 }
 
-figure{
+.img{
     position: absolute;
-    left: 5%;
-    top: 40%;
+    left: 10%;
+    top: 60%;
+    width: 30%;
+    height: auto;
+}
+
+@media screen and (max-width: 500px) {
+	#circle {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    height: 150vh;
+    width: 100vw;
+    border-radius: 0 100vw 100vw  0;
+    background-color: #dffcff;
+	}
+   h1{
+     display:none;
+   }
+  p{
+    font-size: 4vmin;
+    width: 100vw;
+  }
+  
+  .video {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .video iframe{
+      width: 80%;
+      height: 80%;
+  }
+  
+  .img{
+    position: absolute;
+    width: 35%;
+    top: 70%;
+  }
 }

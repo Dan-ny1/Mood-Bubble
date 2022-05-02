@@ -1,11 +1,11 @@
 #circle {
 	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: 40rem;
-	width: 80rem;
-	border-radius: 0 0 40rem 40rem;
+ top: 30%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ height: 90vh;
+ width: 100vw;
+ border-radius: 0 0 90vh 90vh;
 	background-color: #d5d8ff;
    }
 
@@ -14,8 +14,8 @@
     justify-content: center;
        align-content: center;
     position: relative;
-    padding-top: 4rem;
-    font-size: 6em;
+    padding-top: 4vh;
+    font-size: 10vw;
     font-family: 'Open Sans', sans-serif;
    }
 
@@ -29,6 +29,29 @@
     font-family: 'Open Sans', sans-serif;
    }
 
+   a{
+      position: fixed;
+      top: 90%;
+      left: 40%;
+      font-size: 2vw;
+   }
    a:hover{
        color:#d5d8ff;
+   }
+   @media screen and (max-width: 500px) {
+      #circle {
+       position: absolute;
+       top: 70%;
+       left: 20%;
+       transform: translate(-50%, -50%);
+       height: 150vh;
+       width: 100vw;
+       border-radius: 0 100vw 100vw  0;
+       background-color: #d5d8ff;
+      }
+      h1{
+         position: absolute;
+         top: 50%;
+      }
+     
    }

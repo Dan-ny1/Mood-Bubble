@@ -21,7 +21,7 @@ button{
     display: grid;
     justify-content: center;
     align-content: center;
-    padding-top: 10rem;
+    height: auto;
     font-size: 3em;
     font-family: 'Open Sans', sans-serif;
   }
@@ -62,4 +62,27 @@ button{
    }
    button.h {
     background-color:#dffcff;
+   }
+
+   @media screen and (max-width: 500px) {
+    button{
+      border-radius: 50%;
+      border: none;
+      width: 100px;
+      height: 100px;
+      position: fixed;
+      font-size: 1em;
+      opacity: 0.9;
+      font-weight: 700;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+  h1{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+  }
    }
