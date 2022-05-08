@@ -8,6 +8,7 @@ $(document).ready(function () {
 	animateDiv(".f");
 	animateDiv(".g");
 	animateDiv(".h");
+	animateDiv(".i")
 });
 
 function makeNewPosition() {

@@ -8,18 +8,8 @@ html {
     box-sizing: inherit;
    }
 
-
-p {
-    position: absolute;
-    left:10%;
-    padding: 0 100px 0px 0px;
-    font-size: 2.5vw;
-    width: 45vw;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 229, 180);
-}
-
-#circle {
+   #circle {
+    z-index: -1;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -27,7 +17,7 @@ p {
     height: 90vh;
     width: 100vw;
     border-radius: 0 0 90vh 90vh;
- background-color: #22223b;
+ background-color: #C795BE;
 }
 
 #arrow {
@@ -41,69 +31,104 @@ p {
     bottom: 0px;
    }
 
-#paper{
-    position: absolute;
-    top: 45%;
-    left: 55%;
-    width: 40%;
+   .container{
+    margin:auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    column-gap: 5%;
+    }
+
+    .container p {
+      place-self: center;
+      grid-column: 1/2;
+      grid-row:1/2;
+        padding: 10%;
+        font-size: 2.5vw;
+        width: 45vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container .image{
+  grid-column: 2/3;
+grid-row: 2/3;
+place-self: center;
+    width: 100%;
     height: auto;
 }
 
 
 
-h1{
-    position: absolute;
-    font-size: 8vw;
-    color: rgb(255, 229, 180);
-    left: 55%;
-    bottom: 50%;
+.container h1{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  place-self: center;
+  padding:5%;
+  margin: 5%;
+    font-size: 6.7vw;
+    color: white;
     font-family: 'Open Sans', sans-serif;
 }
 
-.img{
-    position: absolute;
-    left: 10%;
-    top: 40%;
-    width: 30%;
-    height: auto;
-}
+.container figure{
+  place-self: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  }
+
+  .img{
+    place-self: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  width: 100%;
+  height: auto;
+  }
 
 
 
 @media screen and (max-width: 500px) {
 	#circle {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
-    height: 150vh;
-    width: 100vw;
-    border-radius: 0 100vw 100vw  0;
-    background-color: #22223b;
+    height: 100vh;
+    width: 80vw;
+    border-radius: 0 80vw 80vw 0;
+    z-index:-1;
+    background-color: #C795BE;
 	}
 
    h1{
      display:none;
    }
 
-  p{
+   .container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6%;
+    align-items: center;
+  }
+
+    .container p{
     font-size: 4vmin;
     width: 100vw;
   }
   
-  #paper{
-    position:absolute;
-    left: 9%;
-    top: 30%;
-    height: 30%;
-    width: auto;
+  
+#paper{
+   align-self: center;
+   width: 100%;
+   top: auto;
 }
 
 
-
-  .img{
-    position: absolute;
-    width: 35%;
-    top: 70%;
-  }
+.img{
+  width: 100%;
+  top: auto;
+}
 }

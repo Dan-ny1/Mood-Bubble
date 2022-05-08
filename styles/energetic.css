@@ -9,18 +9,8 @@ html {
    }
 
 
-   p {
-    position: absolute;
-       left:10%;
-       padding: 0 100px 0px 0px;
-       font-size: 2.5vw;
-       width: 45vw;
-       font-family: 'Montserrat', sans-serif;
-   }
-   
-   
-   
    #circle {
+    z-index: -1;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -42,76 +32,104 @@ html {
     left: 50%;
     bottom: 0px;
    }
+   
+   .container{
+    margin:auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    column-gap: 5%;
+    }
 
-   .video{
-    position: absolute;
-    top: 35%;
-    left: 53%;
-    width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
+   .container p {
+    place-self: center;
+    grid-column: 1/2;
+    grid-row:1/2;
+      padding: 10%;
+      font-size: 1.8vw;
+      width: 45vw;
+      font-family: 'Montserrat', sans-serif;
+   }
+   
+  
+
+   .container .video{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    place-self: center;
+      width: 100%;
+      padding-bottom: 56.25%; 
+      height: 0;
   }
-  .video iframe{
+  .container .video iframe{
     position: absolute;
-    top:0;
-    left: 0;
     width: 40%;
     height: 40%;
   }
 
-h1{
-    position: absolute;
-    font-size: 15vw;
+  .container h1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    place-self: center;
+    font-size: 13vw;
     color: white;
-    left: 55%;
-    bottom: 58%;
     font-family: 'Open Sans', sans-serif;
+    padding:5%;
+    margin: 5%;
+
 }
 
-.img{
-    position: absolute;
-    left: 10%;
-    top: 55%;
-    width: 30%;
-    height: auto;
-}
+.container figure{
+  place-self: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  }
+  .img{
+  width: 100%;
+  height: auto;
+  }
 
 
 @media screen and (max-width: 500px) {
 	#circle {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
-    height: 150vh;
-    width: 100vw;
-    border-radius: 0 100vw 100vw  0;
+    height: 100vh;
+    width: 80vw;
+    border-radius: 0 80vw 80vw 0;
+    z-index:-1;
     background-color: #cfd6ea;
 	}
    h1{
      display:none;
    }
-  p{
+
+   .container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6%;
+  }
+    .container p{
     font-size: 4vmin;
     width: 100vw;
   }
-  
-  .video {
-    position: absolute;
-    top: 35%;
-    left: 10%;
+  .container.video {
     width: 100%;
-    padding-bottom: 56.25%; 
     height: 0;
+    padding-bottom: 0;
   }
-  .video iframe{
+  .container .video iframe{
       width: 80%;
-      height: 80%;
+      height: auto;
   }
   
   .img{
-    position: absolute;
-    width: 35%;
-    top: 70%;
+    width: 100%;
+    top: auto;
   }
 }
